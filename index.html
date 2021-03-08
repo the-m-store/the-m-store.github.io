@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <styles>
+        @keyframes blink {50% { color: transparent }}
+        .loader__dot { animation: 1s blink infinite }
+        .loader__dot:nth-child(2) { animation-delay: 250ms }
+        .loader__dot:nth-child(3) { animation-delay: 500ms }
+        body {
+          background: lightblue;
+        }
+        h1 {
+          text-align: center;
+        }
+    </styles>
+  </head>
+  
 <body>
-<h1>Coming Soon...</h1>
+<h1>Coming Soon<span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span></div></h1>
 </body>
 </html>
